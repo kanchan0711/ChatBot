@@ -6,9 +6,9 @@ import {
 } from "react-chat-engine-advanced";
 import Header from "../CostomHeader/Heder";
 import StandardMessageForm from "../CustomMessageForm/StandardMessageForm";
-// import Ai from "@/components/customMessageForms/Ai";
-// import AiCode from "@/components/customMessageForms/AiCode";
-// import AiAssist from "@/components/customMessageForms/AiAssist";
+// import Ai from "../CustomMessageForm/Ai"
+// import AiCode from "../CustomMessageForm/AiCode";
+// import AiAssist from "../CustomMessageForm/AiAssist";
 
 const Chat = ({ user, secret }) => {
   const chatProps = useMultiChatLogic(
@@ -25,15 +25,15 @@ const Chat = ({ user, secret }) => {
         style={{ height: "100vh" }}
         renderChatHeader={(chat) => <Header chat={chat} />}
          renderMessageForm={(props) => {
-        //   if (chatProps.chat?.title.startsWith("AiChat_")) {
-        //     return <Ai props={props} activeChat={chatProps.chat} />;
-        //   }
-        //   if (chatProps.chat?.title.startsWith("AiCode_")) {
-        //     return <AiCode props={props} activeChat={chatProps.chat} />;
-        //   }
-        //   if (chatProps.chat?.title.startsWith("AiAssist_")) {
-        //     return <AiAssist props={props} activeChat={chatProps.chat} />;
-        //   }
+          // if (chatProps.chat?.title.startsWith("AiChat_")) {
+          //   return <Ai props={props} activeChat={chatProps.chat} />;
+          // }
+          // if (chatProps.chat?.title.startsWith("AiCode_")) {
+          //   return <AiCode props={props} activeChat={chatProps.chat} />;
+          // }
+          // if (chatProps.chat?.title.startsWith("AiAssist_")) {
+          //   return <AiAssist props={props} activeChat={chatProps.chat} />;
+          // }
 
           return (
             <StandardMessageForm props={props} activeChat={chatProps.chat} />

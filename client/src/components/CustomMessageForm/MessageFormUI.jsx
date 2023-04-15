@@ -80,7 +80,7 @@ const MessageFormUI = ({
             className="message-form-icon-airplane"
             onClick={() => {
               setPreview("");
-              handleSubmit();
+              handleSubmit(); 
             }}
           />
         </div>
