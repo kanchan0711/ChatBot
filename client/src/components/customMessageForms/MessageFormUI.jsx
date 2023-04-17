@@ -65,12 +65,12 @@ const MessageFormUI = ({
             }}
           >
             {({ getRootProps, getInputProps, open }) => (
-              <div {...getRootProps()}> 
+              <div {...getRootProps()}>
                 <input {...getInputProps()} />
                 <PaperClipIcon
                   className="message-form-icon-clip"
                   onClick={open}
-                /> 
+                />
               </div>
             )}
           </Dropzone>
@@ -80,7 +80,7 @@ const MessageFormUI = ({
             className="message-form-icon-airplane"
             onClick={() => {
               setPreview("");
-              handleSubmit(); 
+              handleSubmit();
             }}
           />
         </div>

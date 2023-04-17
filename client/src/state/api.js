@@ -12,34 +12,34 @@ export const api = createApi({
         body: payload,
       }),
     }),
-    // postAiCode: build.mutation({
-    //   query: (payload) => ({
-    //     url: "openai/code",
-    //     method: "POST",
-    //     body: payload,
-    //   }),
-    // }),
-    // postAiAssist: build.mutation({
-    //   query: (payload) => ({
-    //     url: "openai/assist",
-    //     method: "POST",
-    //     body: payload,
-    //   }),
-    // }),
-    // postLogin: build.mutation({
-    //   query: (payload) => ({
-    //     url: "auth/login",
-    //     method: "POST",
-    //     body: payload,
-    //   }),
-    // }),
-    // postSignUp: build.mutation({
-    //   query: (payload) => ({
-    //     url: "auth/signup",
-    //     method: "POST",
-    //     body: payload,
-    //   }),
-    // }),
+    postAiCode: build.mutation({
+      query: (payload) => ({
+        url: "openai/code",
+        method: "POST",
+        body: payload,
+      }),
+    }),
+    postAiAssist: build.mutation({
+      query: (payload) => ({
+        url: "openai/assist",
+        method: "POST",
+        body: payload,
+      }),
+    }),
+    postLogin: build.mutation({
+      query: (payload) => ({
+        url: "auth/login",
+        method: "POST",
+        body: payload,
+      }),
+    }),
+    postSignUp: build.mutation({
+      query: (payload) => ({
+        url: "auth/signup",
+        method: "POST",
+        body: payload,
+      }),
+    }),
   }),
 });
 

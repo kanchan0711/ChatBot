@@ -18,7 +18,7 @@ const StandardMessageForm = ({ props, activeChat }) => {
       created: date,
       sender_username: props.username,
       text: message,
-      activeChatId: activeChat.id, 
+      activeChatId: activeChat.id,
     };
 
     props.onSubmit(form);
